@@ -1,3 +1,6 @@
+Copy-paste this **entire thing** into your GitHub `README.md`:
+
+````markdown
 # AR-APP
 
 An interactive Augmented Reality musical instrument application built with Unity. The project provides virtual instruments that users can interact with through an intuitive interface.
@@ -39,64 +42,102 @@ Clone the repository:
 ```bash
 git clone https://github.com/JayantaKundu17/AR-APP.git
 cd AR-APP
+````
 
-Install and download Git LFS assets:
+Install Git LFS and download the large assets:
 
+```bash
 git lfs install
 git lfs pull
+```
 
-Open the project in Unity 6000.4.10f1 through Unity Hub.
+Open the project in **Unity 6000.4.10f1** through Unity Hub.
 
 Open the main scene:
 
+```text
 Assets/Scenes/Final.unity
+```
 
-Press Play to run the application.
+Press **Play** to run the application.
 
-Using the Application
-Main Menu
-Play — Start the application
-Instrument Selection — Choose an instrument
-Settings — Adjust volume and interaction sensitivity
-Exit — Exit the application
-Piano
+## Using the Application
 
-Select Piano and interact with individual keys to play different notes.
+### Main Menu
 
-Drum Kit
+* **Play** — Start the application
+* **Instrument Selection** — Choose an instrument
+* **Settings** — Adjust volume and interaction sensitivity
+* **Exit** — Exit the application
 
-Select Drum and interact with the available drum pads to produce different sounds.
+### Piano
 
-Project Structure
-Assets/
-├── Audio/          # Instrument and UI sounds
-├── Models/         # Piano and drum models
-├── Scenes/         # Unity scenes
-├── Scripts/        # C# scripts
-└── Settings/       # Project settings/assets
+Select **Piano** and interact with individual keys to play different notes.
 
+### Drum Kit
 
-Packages/            # Unity packages
-ProjectSettings/     # Unity project configuration
-Git LFS
+Select **Drum** and interact with the available drum pads to produce different sounds.
+
+## Project Structure
+
+```text
+AR-APP/
+├── Assets/
+│   ├── Audio/          # Instrument and UI sounds
+│   ├── Models/         # Piano and drum models
+│   ├── Scenes/         # Unity scenes
+│   ├── Scripts/        # C# scripts
+│   └── Settings/       # Project settings/assets
+├── Packages/            # Unity packages
+├── ProjectSettings/     # Unity project configuration
+├── .gitattributes
+├── .gitignore
+└── README.md
+```
+
+## Git LFS
 
 Git LFS is used for large assets such as:
 
-*.fbx
-*.mp3
-*.wav
-*.png
-*.jpg
-*.jpeg
+* `.fbx`
+* `.mp3`
+* `.wav`
+* `.png`
+* `.jpg`
+* `.jpeg`
 
 If assets are missing after cloning, run:
 
+```bash
+git lfs install
 git lfs pull
+```
 
-The Unity Library, Temp, Logs, and other generated files are intentionally excluded from the repository.
+The Unity `Library`, `Temp`, `Logs`, and other generated files are intentionally excluded from the repository.
 
-Author
+## Troubleshooting
 
-Jayanta Kundu
+### Missing Assets
 
-GitHub: https://github.com/JayantaKundu17
+Make sure Git LFS is installed and run:
+
+```bash
+git lfs pull
+```
+
+### Unity Takes a Long Time to Open
+
+The first launch may take longer because Unity needs to import assets, resolve packages, and generate its local `Library` data. This is normal for a newly cloned Unity project.
+
+## Author
+
+**Jayanta Kundu**
+
+GitHub: [https://github.com/JayantaKundu17](https://github.com/JayantaKundu17)
+
+## Project Status
+
+**Functional / Development Project**
+
+The repository contains the working Unity project, including models, audio, scripts, UI, scenes, and project configuration.
+

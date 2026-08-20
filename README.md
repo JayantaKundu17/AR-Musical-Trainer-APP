@@ -1,4 +1,3 @@
-Copy-paste this **entire thing** into your GitHub `README.md`:
 
 ````markdown
 # AR-APP
